@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Employee>
+
+<h2>List of Employees</h2>
+
+<table border="1" cellpadding="10">
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>@emp.EmployeeID</td>
+            <td>@emp.FirstName</td>
+            <td>@emp.LastName</td>
+        </tr>
+    }
+</table>
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
